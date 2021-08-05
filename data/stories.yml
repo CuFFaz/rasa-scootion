@@ -1,0 +1,460 @@
+version: "2.0"
+
+stories:
+
+- story: Asks other fuel
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_greet_again
+  - intent: focus_fuel
+  - action: utter_deny_other_fuel_type
+
+- story: Asks Electric
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_greet_again
+  - intent: focus_electric
+  - action: utter_fuel_type
+
+- story: Asks Mileage or Range
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_greet_again
+  - intent: focus_range
+  - action: utter_range
+
+- story: Asks Speed
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_greet_again
+  - intent: focus_speed
+  - action: utter_speed
+
+- story: Asks Color
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_greet_again
+  - intent: focus_color
+  - action: utter_color
+  - action: action_show_colors
+
+- story: Say Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Something
+  steps: 
+  - intent: agent.acquaintance
+  - action: utter_greet_again
+
+
+- story: Something
+  steps: 
+  - intent: agent.age
+  - action: utter_agent.age
+  
+- story: Something
+  steps: 
+  - intent: agent.annoying
+  - action: utter_agent.annoying
+  
+- story: Something
+  steps: 
+  - intent: agent.answer_my_question
+  - action: utter_agent.answer_my_question
+
+- story: Something
+  steps: 
+  - intent: agent.bad
+  - action: utter_agent.bad
+  
+- story: Something
+  steps: 
+  - intent: agent.be_clever
+  - action: utter_agent.be_clever
+  
+- story: Something
+  steps: 
+  - intent: agent.beautiful
+  - action: utter_agent.beautiful
+  
+- story: Something
+  steps: 
+  - intent: agent.birth_date
+  - action: utter_agent.birth_date
+  
+- story: Something
+  steps: 
+  - intent: agent.boring
+  - action: utter_agent.boring
+  
+- story: Something
+  steps: 
+  - intent: agent.boss
+  - action: utter_agent.boss
+  
+- story: Something
+  steps: 
+  - intent: agent.busy
+  - action: utter_agent.busy
+  
+- story: Something
+  steps: 
+  - intent: agent.can_you_help
+  - action: utter_agent.can_you_help
+
+- story: Something
+  steps: 
+  - intent: agent.chatbot
+  - action: utter_agent.chatbot
+  
+- story: Something
+  steps: 
+  - intent: agent.clever
+  - action: utter_agent.clever
+  
+- story: Something
+  steps: 
+  - intent: agent.crazy
+  - action: utter_agent.crazy
+  
+- story: Something
+  steps: 
+  - intent: agent.fired
+  - action: utter_agent.fired
+  
+- story: Something
+  steps: 
+  - intent: agent.funny
+  - action: utter_agent.funny
+  
+- story: Something
+  steps: 
+  - intent: agent.good
+  - action: utter_agent.good
+  
+- story: Something
+  steps: 
+  - intent: agent.happy
+  - action: utter_agent.happy
+  
+- story: Something
+  steps: 
+  - intent: agent.hobby
+  - action: utter_agent.hobby
+  
+- story: Something
+  steps: 
+  - intent: agent.hungry
+  - action: utter_agent.hungry
+  
+- story: Something
+  steps: 
+  - intent: agent.marry_user
+  - action: utter_agent.marry_user
+  
+- story: Something
+  steps: 
+  - intent: agent.my_friend
+  - action: utter_agent.my_friend
+  
+- story: Something
+  steps: 
+  - intent: agent.occupation
+  - action: utter_agent.occupation
+  
+- story: Something
+  steps: 
+  - intent: agent.origin
+  - action: utter_agent.origin
+  
+- story: Something
+  steps: 
+  - intent: agent.ready
+  - action: utter_agent.ready
+  
+- story: Something
+  steps: 
+  - intent: agent.real
+  - action: utter_agent.real
+  
+- story: Something
+  steps: 
+  - intent: agent.residence
+  - action: utter_agent.residence
+  
+- story: Something
+  steps: 
+  - intent: agent.right
+  - action: utter_agent.right
+  
+- story: Something
+  steps: 
+  - intent: agent.sure
+  - action: utter_agent.sure
+
+- story: Something
+  steps: 
+  - intent: agent.talk_to_me
+  - action: utter_agent.talk_to_me
+
+- story: Something
+  steps: 
+  - intent: agent.there
+  - action: utter_agent.there
+  
+- story: Something
+  steps: 
+  - intent: appraisal.bad
+  - action: utter_appraisal.bad
+  
+- story: Something
+  steps: 
+  - intent: appraisal.good
+  - action: utter_appraisal.good
+  
+- story: Something
+  steps: 
+  - intent: appraisal.no_problem
+  - action: utter_appraisal.no_problem
+  
+- story: Something
+  steps: 
+  - intent: appraisal.thank_you
+  - action: utter_appraisal.thank_you
+  
+- story: Something
+  steps: 
+  - intent: appraisal.welcome
+  - action: utter_appraisal.welcome
+
+- story: Something
+  steps: 
+  - intent: appraisal.well_done
+  - action: utter_appraisal.well_done
+  
+- story: Something
+  steps: 
+  - intent: dialog.hold_on
+  - action: utter_dialog.hold_on
+
+- story: Something
+  steps: 
+  - intent: dialog.hug
+  - action: utter_dialog.hug
+  
+- story: Something
+  steps: 
+  - intent: dialog.i_do_not_care
+  - action: utter_dialog.i_do_not_care
+  
+- story: Something
+  steps: 
+  - intent: dialog.sorry
+  - action: utter_dialog.sorry
+  
+- story: Something
+  steps: 
+  - intent: dialog.what_do_you_mean
+  - action: utter_dialog.what_do_you_mean
+  
+- story: Something
+  steps: 
+  - intent: dialog.wrong
+  - action: utter_dialog.wrong
+  
+- story: Something
+  steps: 
+  - intent: emotions.ha_ha
+  - action: utter_emotions.ha_ha
+  
+- story: Something
+  steps: 
+  - intent: emotions.wow
+  - action: utter_emotions.wow
+
+- story: Something
+  steps: 
+  - intent: greetings.how_are_you
+  - action: utter_greetings.how_are_you
+     
+- story: Something
+  steps: 
+  - intent: greetings.nice_to_meet_you
+  - action: utter_greetings.nice_to_meet_you
+  
+- story: Something
+  steps: 
+  - intent: greetings.nice_to_see_you
+  - action: utter_greetings.nice_to_see_you
+  
+- story: Something
+  steps: 
+  - intent: greetings.nice_to_talk_to_you
+  - action: utter_greetings.nice_to_talk_to_you
+  
+- story: Something
+  steps: 
+  - intent: greetings.whatsup
+  - action: utter_greetings.whatsup
+
+- story: Something
+  steps: 
+  - intent: user.angry
+  - action: utter_user.angry
+  
+- story: Something
+  steps: 
+  - intent: user.back
+  - action: utter_user.back
+  
+- story: Something
+  steps: 
+  - intent: user.bored
+  - action: utter_user.bored
+  
+- story: Something
+  steps: 
+  - intent: user.busy
+  - action: utter_user.busy
+  
+- story: Something
+  steps: 
+  - intent: user.can_not_sleep
+  - action: utter_user.can_not_sleep
+  
+- story: Something
+  steps: 
+  - intent: user.does_not_want_to_talk
+  - action: utter_user.does_not_want_to_talk
+  
+- story: Something
+  steps: 
+  - intent: user.excited
+  - action: utter_user.excited
+  
+- story: Something
+  steps: 
+  - intent: user.going_to_bed
+  - action: utter_user.going_to_bed
+  
+- story: Something
+  steps: 
+  - intent: user.good
+  - action: utter_user.good
+  
+- story: Something
+  steps: 
+  - intent: user.happy
+  - action: utter_user.happy
+  
+- story: Something
+  steps: 
+  - intent: user.has_birthday
+  - action: utter_user.has_birthday
+  
+- story: Something
+  steps: 
+  - intent: user.here
+  - action: utter_user.here
+  
+- story: Something
+  steps: 
+  - intent: user.joking
+  - action: utter_user.joking
+  
+- story: Something
+  steps: 
+  - intent: user.likes_agent
+  - action: utter_user.likes_agent
+  
+- story: Something
+  steps: 
+  - intent: user.lonely
+  - action: utter_user.lonely
+  
+- story: Something
+  steps: 
+  - intent: user.looks_like
+  - action: utter_user.looks_like
+  
+- story: Something
+  steps: 
+  - intent: user.loves_agent
+  - action: utter_user.loves_agent
+
+- story: Something
+  steps: 
+  - intent: user.misses_agent
+  - action: utter_user.misses_agent
+  
+- story: Something
+  steps: 
+  - intent:  user.needs_advice
+  - action: utter_user.needs_advice
+
+- story: Something
+  steps: 
+  - intent: user.sad
+  - action: utter_user.sad
+
+- story: Something
+  steps: 
+  - intent: user.sleepy
+  - action: utter_user.sleepy
+
+- story: Something
+  steps: 
+  - intent: user.testing_agent
+  - action: utter_user.testing_agent
+
+- story: Something
+  steps: 
+  - intent: user.tired
+  - action: utter_user.tired
+  
+- story: Something
+  steps: 
+  - intent: user.waits
+  - action: utter_user.waits
+
+- story: Something
+  steps: 
+  - intent: user.wants_to_see_agent_again
+  - action: utter_user.wants_to_see_agent_again
+
+- story: Something
+  steps: 
+  - intent: user.wants_to_talk 
+  - action: utter_user.wants_to_talk
+  
+- story: Something
+  steps: 
+  - intent: user.will_be_back
+  - action: utter_user.will_be_back
+  
+- story: Something
+  steps: 
+  - intent: confirmation.yes
+  - action: utter_confirmation.yes
+
+- story: Something
+  steps: 
+  - intent: confirmation.cancel
+  - action: utter_confirmation.cancel
+
+- story: Something
+  steps: 
+  - intent: confirmation.no
+  - action: utter_confirmation.no
+
+- story: Something
+  steps:
+  - intent: agent.what_can_do
+  - action: utter_greet_again
